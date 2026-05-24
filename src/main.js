@@ -18,10 +18,6 @@ function handleSearchSubmit(event) {
   const searchQuery = event.currentTarget.elements['search-text'].value.trim();
 
   if (!searchQuery) {
-    iziToast.error({
-      message: 'Please fill in the search field.',
-      position: 'topRight',
-    });
     return;
   }
 
