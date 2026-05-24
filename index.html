@@ -5,12 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/styles-od7gY0HW.js">
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-BrddEoy-.js">
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/pixabay-api-Ce4-I61B.js">
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/render-functions-DZHMk0iM.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/styles-Cq2Z16Te.css">
+    <script type="module" crossorigin src="/goit-js-hw-11/assets/vendor-Bw0cGICD.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-11/assets/render-functions-z8gRvZkf.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-11/assets/main-Dt1_dBX1.js"></script>
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/render-functions-Cq2Z16Te.css">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CWKLx11g.css">
   </head>
   <body>
@@ -40,7 +38,25 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <div class="container image-search-page">
+        <form class="form">
+          <label>
+            <input
+              type="text"
+              name="search-text"
+              placeholder="Search images..."
+              required
+            />
+          </label>
+          <button type="submit">Search</button>
+        </form>
+
+        <span class="loader" aria-hidden="true"></span>
+
+        <ul class="gallery"></ul>
+      </div>
+    </main>
 
     <footer class="footer">
       <div class="container">
